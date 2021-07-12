@@ -12,7 +12,7 @@
 #'
 #' @export
 #'
-#' @examples
+
 BD.extent <- function(Y,
                       dist_spp,
                       nperm=999,

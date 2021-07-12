@@ -12,7 +12,7 @@
 #'
 #' @export
 #'
-#' @examples
+
 EvennessEigen <- function(matrix.M,
                            scale = TRUE,
                            method = "standardize",

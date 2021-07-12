@@ -2,22 +2,26 @@
 % Please edit documentation in R/ImportanceVal_function.R
 \name{ImportanceVal}
 \alias{ImportanceVal}
-\title{IV function to compute Importance Values of diversity metrics}
+\title{Importance Values (IV) of diversity metrics}
 \usage{
 ImportanceVal(matrix.M, scale = TRUE, method = "max", stopRule = TRUE)
 }
 \arguments{
 \item{matrix.M}{Matrix containing diversity metrics (columns) values for each sample (lines)}
 
-\item{scale}{Logical. If TRUE (default) the diversity metrics are scaled}
+\item{scale}{Logical. If TRUE (default) the diversity metrics are scaled for maximun values of each metric}
 
 \item{method}{Method used to scale matrix M, default is scaling each diversity metric by their maximmun value}
 
-\item{stopRule}{Logical. If TRUE (default) a stoping rule are used to select only the axis of the PCA that matched the rule (Kaiser-Gutmann criterion)}
+\item{stopRule}{Logical. If TRUE (default) a stop rule are used to select only the axis
+of the PCA that matched the rule (Kaiser-Gutmann criterion)}
 }
 \value{
-
+A list of length 3 containing:
+1- The IV for each diversity metric (IV.obs_stopRule if stopRule = TRUE)
+2- The proportion of variation accounted by each metric in each axis
+3- The correlation (Pearson) among all metrics
 }
 \description{
-IV function to compute Importance Values of diversity metrics
+Importance Values (IV) of diversity metrics
 }

@@ -12,14 +12,6 @@
 #'     3- The correlation (Pearson) among all metrics
 #' @export
 #'
-#' @examples
-#'     \donotrun{
-#'
-#'     data(rodents_diversity)
-#'     IV_rodents <- ImportanceVal(matrixM = rodents_diversity, method = "max", stopRule = TRUE)
-#'     IV_rodents$IV.obs_stopRule # IV results
-#'
-#'     }
 ImportanceVal <- function(matrix.M,
                           scale= TRUE,
                           method= "max",

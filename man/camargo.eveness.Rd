@@ -12,7 +12,7 @@ camargo.eveness(n_spec, include_zeros = T)
 \item{include_zeros}{Logical, if TRUE (default) the absences are accounted in the calculation of mean}
 }
 \value{
-numeric
+Numeric value of Camargo Evenness measure
 }
 \description{
 Camargo evenness index
