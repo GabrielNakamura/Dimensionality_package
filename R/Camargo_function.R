@@ -28,6 +28,6 @@ camargo.eveness <- function(n_spec, include_zeros = T){
             camar[i,j] <- ((abs(p_i - p_j))/S)
         }
     }
-    sum.camar<- abs(sum(as.dist(camar, diag= FALSE, upper= FALSE)))
+    sum.camar<- abs(sum(proxy::as.dist(camar, diag= FALSE, upper= FALSE)))
     return(1-sum.camar)
 }

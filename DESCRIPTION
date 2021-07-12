@@ -1,6 +1,6 @@
 Package: Dimensionality
-Title: Package to compute index of dimensionality of biodiversity and other auxiliar functions.
-Version: 0.0.0.9000
+Title: Package to compute dimensionality, alpha and beta measures of biodiversity
+Version: 0.0.1
 Authors@R: 
     person(given = "Gabriel",
            family = "Nakamura",
@@ -8,9 +8,15 @@ Authors@R:
            email = "gabriel.nakamura.souza@gmail.com",
            comment = c(ORCID = "0000-0002-5144-5312"))
 Description: This package compute index to access the dimensionality of diversity. Two basic index to access dimensionality are computed, Evenness of Eigenvalues and Importance Values
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports:
+    adespatial,
+    picante,
+    proxy,
+    SYNCSA,
+    stats,
+    vegan
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
