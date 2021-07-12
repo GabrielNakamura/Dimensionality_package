@@ -9,6 +9,7 @@
 #'
 #' @return A scalar (if used "Camargo" or "Pielou") or a numeric vector of length 2
 #'     if "both" in evenness argument.
+#'
 #' @export
 #'
 #' @examples

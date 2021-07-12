@@ -13,24 +13,21 @@
 #' @export
 #'
 #' @examples
-Beta.div_adapt <- function(Y,
-                           dist_spp,
-                           nperm=999,
-                           method = "raw"){
-  require(SYNCSA)
-  require(vegan)
-  require(adespatial)
-  if(dim(Y)[1]<=1){
+BD.extent <- function(Y,
+                      dist_spp,
+                      nperm=999,
+                      method = "raw"){
+  if(dim(Y)[1] <= 1){
     stop("\n matrix Y must be at least three communities\n")
   }
-  if(sum(is.na(match(colnames(Y),rownames(dist_spp))))>0){
+  if(sum(is.na(match(colnames(Y), rownames(dist_spp)))) > 0){
     stop("\n there are species in community matrix no present in phylogeny\n")
   }
-  if(is.matrix(Y)==FALSE){
+  if(is.matrix(Y) == FALSE){
     Y <- as.matrix(Y)
   }
 
-  if(sum(is.na(match(colnames(Y), rownames(dist_spp))))>=1){
+  if(sum(is.na(match(colnames(Y), rownames(dist_spp)))) >= 1){
     stop("\n species names in Y and phylogenetic tree must be the same\n")
   }
   Yorg<- Y[,match(colnames(Y), rownames(dist_spp))]

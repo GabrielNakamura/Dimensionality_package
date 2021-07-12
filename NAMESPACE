@@ -2,3 +2,5 @@
 
 export(ImportanceVal)
 export(camargo.eveness)
+export(EvennessEigen)
+export(BD.extent)
